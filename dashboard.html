@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; background: #f5f5f5; }
+    .card { background: white; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    h2 { margin-top: 0; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; }
+    .todo { background: #e0e0e0; }
+    .in-progress { background: #fff3cd; }
+    .done { background: #d4edda; color: #155724; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Group Overview</h2>
+    <p><strong>Group:</strong> Team Alpha</p>
+    <p><strong>Members:</strong> Alice, Bob, Carol, Dave</p>
+    <p><strong>Advisor:</strong> Prof. Smith</p>
+  </div>
+
+  <div class="card">
+    <h2>Active Sprint</h2>
+    <p><strong>Sprint:</strong> Sprint 1</p>
+    <p><strong>End Date:</strong> 2026-05-20</p>
+  </div>
+
+  <div class="card">
+    <h2>Sprint Issues</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Summary</th>
+          <th>Assignee</th>
+          <th>Points</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PROJ-1</td>
+          <td>Login page implementation</td>
+          <td>Alice</td>
+          <td>3</td>
+          <td><span class="badge done">Done</span></td>
+        </tr>
+        <tr>
+          <td>PROJ-2</td>
+          <td>Registration page implementation</td>
+          <td>Bob</td>
+          <td>3</td>
+          <td><span class="badge done">Done</span></td>
+        </tr>
+        <tr>
+          <td>PROJ-3</td>
+          <td>Dashboard page</td>
+          <td>Alice</td>
+          <td>5</td>
+          <td><span class="badge in-progress">In Progress</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>My Completion</h2>
+    <p><strong>Completed Points:</strong> 3 / 8</p>
+    <p><strong>Completion Ratio:</strong> 37.5%</p>
+  </div>
+
+</body>
+</html>
